@@ -49,13 +49,12 @@ func createHMAC(sharedKey,
 		return "", err
 	}
 	date = parsedDate.Format(dateTimeFormat)
-	method := httpMethod
 	oneTimeSecret := secretKey + date
 	u, err := url.Parse(requestURL)
 	if err != nil {
 		return "", err
 	}
-	toSign := method + "\n" + u.RequestURI()
+	toSign := httpMethod + "\n" + u.RequestURI()
 	if contentType != "" {
 		toSign += "\n" + contentType
 	}
