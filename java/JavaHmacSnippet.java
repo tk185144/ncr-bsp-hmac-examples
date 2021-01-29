@@ -16,8 +16,8 @@ public class JavaHmacSnippet {
      *
      * this is meant to be copied and used in your project to authenticate to the NCR Business Services Platform
      *
-     * Disclaimer: This is not proper javascript format, but it has been reduced for ease of integration for those not
-     * familiar with the BSP or javascript
+     * Disclaimer: This is not proper java format, but it has been reduced for ease of integration for those not
+     * familiar with the BSP or java
      *
      * @param sharedKey user's shared key
      * @param secretKey user's secret key
