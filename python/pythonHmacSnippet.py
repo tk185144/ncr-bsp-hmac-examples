@@ -1,7 +1,7 @@
 # this is meant to be copied and used in your project to authenticate to the NCR Business Services Platform
 #
 # Disclaimer: This is not proper python format, but it has been reduced for ease of integration for those not
-# familiar with the BSP or golang
+# familiar with the BSP or python
 #
 # createHMAC
 #
