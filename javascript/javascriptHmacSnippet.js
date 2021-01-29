@@ -33,6 +33,8 @@ function createHMAC(
   nepServiceVersion) {
 
   const sdk = require('postman-collection');
+  const cryptojs = require('crypto-js');
+
   const url = new sdk.Url(requestURL);
   const uri = encodeURI(url.getPathWithQuery());
 
@@ -61,7 +63,6 @@ function createHMAC(
     toSign += "\n" + nepServiceVersion.trim();
   }
 
-  const cryptojs = require('crypto-js');
   const key = cryptojs.HmacSHA512(toSign, oneTimeSecret);
   const accessKey = sharedKey + ":" + cryptojs.enc.Base64.stringify(key);
   return "AccessKey " + accessKey;
