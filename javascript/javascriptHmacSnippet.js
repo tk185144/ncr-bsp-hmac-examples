@@ -18,7 +18,7 @@
 // nepOrganization - nepOrganization header from request (optional, unless required by API documentation)
 // nepServiceVersion - nepServiceVersion header from request (optional, unless required by API documentation)
 //
-// returns the header for the Authorization header on a BSP API request
+// returns the value for the Authorization header on a BSP API request
 function createHMAC(
   sharedKey,
   secretKey,
