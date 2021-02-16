@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace BSPExamples
 {
-	public class CSharpHmacSnippet
-	{
+    public class CSharpHmacSnippet
+    {
         /// <summary>
         /// This is meant to be copied and used in your project to authenticate to the NCR Business Services Platform
         /// </summary>
@@ -84,5 +84,5 @@ namespace BSPExamples
             string accessKey = sharedKey + ":" + System.Convert.ToBase64String(hash);
             return "AccessKey " + accessKey;
         }
-	}
+    }
 }
